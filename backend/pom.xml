@@ -54,7 +54,7 @@
               <outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${project.parent.basedir}/frontend/dist/frontend/</directory>
+                  <directory>${project.parent.basedir}/frontend/dist/apps/orchestration</directory>
                 </resource>
               </resources>
             </configuration>

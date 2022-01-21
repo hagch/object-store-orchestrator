@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "orchestration": "apps/orchestration",
+    "orchestration-e2e": "apps/orchestration-e2e"
+  }
+}

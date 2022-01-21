@@ -14,7 +14,7 @@
   <build>
     <resources>
       <resource>
-        <directory>./dist/frontend</directory>
+        <directory>./dist/apps/orchestration</directory>
         <targetPath>static</targetPath>
       </resource>
     </resources>
