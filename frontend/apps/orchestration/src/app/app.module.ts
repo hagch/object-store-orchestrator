@@ -12,6 +12,10 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
     BrowserModule,
     RouterModule.forRoot([
       {
+        path: 'test',
+        component: NxWelcomeComponent
+      },
+      {
         path: 'object-store',
         loadChildren: () =>
           loadRemoteModule({
