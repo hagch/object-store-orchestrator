@@ -49,12 +49,14 @@
           <execution>
             <id>copy-resources</id>
             <phase>validate</phase>
-            <goals><goal>copy-resources</goal></goals>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
             <configuration>
               <outputDirectory>${project.build.directory}/classes/resources/static</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${project.parent.basedir}/frontend/dist/apps/orchestration</directory>
+                  <directory>${project.parent.basedir}/frontend/dist/apps/orchestrator</directory>
                 </resource>
               </resources>
             </configuration>

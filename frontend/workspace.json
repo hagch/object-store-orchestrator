@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "orchestration": "apps/orchestration",
-    "orchestration-e2e": "apps/orchestration-e2e"
+    "orchestrator": "apps/orchestrator",
+    "orchestrator-e2e": "apps/orchestrator-e2e"
   }
 }

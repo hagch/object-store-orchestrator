@@ -1,0 +1,28 @@
+{
+  "root": "apps/orchestrator-e2e",
+  "sourceRoot": "apps/orchestrator-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/orchestrator-e2e/cypress.json",
+        "devServerTarget": "orchestrator:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "orchestrator:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/orchestrator-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["orchestrator"]
+}

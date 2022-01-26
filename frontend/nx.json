@@ -1,5 +1,5 @@
 {
-  "npmScope": "frontend",
+  "npmScope": "frontend1",
   "affected": {
     "defaultBase": "main"
   },
@@ -44,5 +44,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "orchestration"
+  "defaultProject": "orchestrator"
 }

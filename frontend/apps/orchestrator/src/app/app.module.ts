@@ -23,7 +23,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
             remoteEntry: 'http://192.168.144.2:8889/remoteEntry.js',
             exposedModule: './Module',
           })
-            .then(m =>  m.RemoteEntryModule)
+          .then(m =>  m.RemoteEntryModule)
       },
     ], { initialNavigation: 'enabledBlocking' }),
   ],

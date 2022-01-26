@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 /* eslint-disable */
 
 @Component({
-  selector: 'frontend-nx-welcome',
+  selector: 'frontend1-nx-welcome',
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -433,7 +433,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome orchestration 👋
+            Welcome orchestrator 👋
           </h1>
         </div>
 
@@ -789,9 +789,9 @@ nx g @nrwl/angular:component button --project ui</pre>
                   d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              View interactive dependency graph
+              View interactive project graph
             </summary>
-            <pre>nx dep-graph</pre>
+            <pre>nx graph</pre>
           </details>
           <details>
             <summary>
@@ -811,7 +811,7 @@ nx g @nrwl/angular:component button --project ui</pre>
               Run affected commands
             </summary>
             <pre><span># see what&apos;s been affected by changes</span>
-nx affected:dep-graph
+nx affected:graph
 
 <span># run tests for current changes</span>
 nx affected:test

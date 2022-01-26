@@ -28,7 +28,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: 'orchestration',
+    uniqueName: 'orchestrator',
     publicPath: 'auto',
   },
   optimization: {
@@ -70,18 +70,18 @@ module.exports = {
           requiredVersion: 'auto',
           includeSecondaries: true,
         },
-        /**rxjs: {
+        rxjs: {
           singleton: true,
           strictVersion: true,
           requiredVersion: 'auto',
           includeSecondaries: true,
-        },**/
+        },
         ...sharedMappings.getDescriptors(),
       }),
       library: {
         type: 'module',
       },
     }),
-    // sharedMappings.getPlugin(),
+    sharedMappings.getPlugin(),
   ],
 };

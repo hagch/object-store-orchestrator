@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'orchestration',
+  displayName: 'orchestrator',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/orchestration',
+  coverageDirectory: '../../coverage/apps/orchestrator',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

@@ -1,27 +1,27 @@
 {
   "projectType": "application",
-  "root": "apps/orchestration",
-  "sourceRoot": "apps/orchestration/src",
-  "prefix": "frontend",
+  "root": "apps/orchestrator",
+  "sourceRoot": "apps/orchestrator/src",
+  "prefix": "frontend1",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/orchestration",
-        "index": "apps/orchestration/src/index.html",
-        "main": "apps/orchestration/src/main.ts",
-        "polyfills": "apps/orchestration/src/polyfills.ts",
-        "tsConfig": "apps/orchestration/tsconfig.app.json",
+        "outputPath": "dist/apps/orchestrator",
+        "index": "apps/orchestrator/src/index.html",
+        "main": "apps/orchestrator/src/main.ts",
+        "polyfills": "apps/orchestrator/src/polyfills.ts",
+        "tsConfig": "apps/orchestrator/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/orchestration/src/favicon.ico",
-          "apps/orchestration/src/assets"
+          "apps/orchestrator/src/favicon.ico",
+          "apps/orchestrator/src/assets"
         ],
-        "styles": ["apps/orchestration/src/styles.scss"],
+        "styles": ["apps/orchestrator/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/orchestration/webpack.config.js"
+          "path": "apps/orchestrator/webpack.config.js"
         }
       },
       "configurations": {
@@ -40,13 +40,13 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/orchestration/src/environments/environment.ts",
-              "with": "apps/orchestration/src/environments/environment.prod.ts"
+              "replace": "apps/orchestrator/src/environments/environment.ts",
+              "with": "apps/orchestrator/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/orchestration/webpack.prod.config.js"
+            "path": "apps/orchestrator/webpack.prod.config.js"
           }
         },
         "development": {
@@ -64,10 +64,10 @@
       "executor": "@nrwl/angular:webpack-server",
       "configurations": {
         "production": {
-          "browserTarget": "orchestration:build:production"
+          "browserTarget": "orchestrator:build:production"
         },
         "development": {
-          "browserTarget": "orchestration:build:development"
+          "browserTarget": "orchestrator:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -78,30 +78,30 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "orchestration:build"
+        "browserTarget": "orchestrator:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/orchestration/src/**/*.ts",
-          "apps/orchestration/src/**/*.html"
+          "apps/orchestrator/src/**/*.ts",
+          "apps/orchestrator/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/orchestration"],
+      "outputs": ["coverage/apps/orchestrator"],
       "options": {
-        "jestConfig": "apps/orchestration/jest.config.js",
+        "jestConfig": "apps/orchestrator/jest.config.js",
         "passWithNoTests": true
       }
     },
     "serve-mfe": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["nx serve orchestration"]
+        "commands": ["nx serve orchestrator"]
       }
     }
   },
