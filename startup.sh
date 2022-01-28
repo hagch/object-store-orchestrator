@@ -1,7 +1,7 @@
 #!/bin/bash
 # Startup script
 
-# read -p "Enter JAVA_HOME [/usr/lib/jvm/java-17-oracle]: " java_input
+read -p "Enter JAVA_HOME [/usr/lib/jvm/java-17-oracle]: " java_input
 java=${java_input:-/usr/lib/jvm/java-17-oracle}
 echo $java
 
